@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "poppins";
+  src: url("../font/Poppins/Poppins-Regular.ttf");
+}
+
+section {
+  display: block;
+}
+
+header {
+  height: 30%;
+  width: 100%;
+  display: inline-block;
+  background-color: rgb(69, 138, 90);
+  text-align: center;
+  background-image: url("../images/pozadina1.jpg");
+}
+
+.moto {
+  width: 25%;
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+.motod {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  display: inline-block;
+}
+
+.logo img {
+  display: inline-block;
+  margin: 15px;
+  height: 100px;
+}
+
+.logo a img:hover {
+  filter: saturate(1000%);
+  transition: 0.2s;
+}
+
+nav {
+  width: 100%;
+}
+
+ul {
+  margin: 0 auto;
+  background-color: rgba(173, 233, 132, 0.349);
+  width: 65%;
+  font-size: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+ul li {
+  text-transform: uppercase;
+  height: 100%;
+  padding: 20px 40px;
+  list-style-type: none;
+  display: inline-block;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+ul li button{
+  text-transform: uppercase;
+  height: 100%;
+  list-style-type: none;
+  display: inline-block;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+
+ul li button:focus{
+  outline: none;
+}
+
+ul li a {
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+ul li:hover {
+  filter: saturate(150%);
+  cursor: pointer;
+  background-color: rgba(155, 226, 108, 0.644);
+}
+
+.glavni {
+  width: 100%;
+  text-align: center;
+}
+
+#reg {
+  color: black;
+  height: 22%;
+  background-color: rgb(217, 238, 196);
+}
+
+input {
+  margin: 5px;
+}
+
+label,
+select,
+option,
+input {
+  display: inline-block;
+  text-align: right;
+  width: 150px;
+}
+
+option {
+  text-align: center;
+}
+
+input {
+  text-align: left;
+}
+
+.potvrdi {
+  text-align: center;
+}
+
+.forma p {
+  font-size: 20px;
+  color: white;
+}
+
+#vestid {
+  margin: 0 auto;
+  text-align: left;
+}
+
+#vestid h1::after {
+  width: 70%;
+  content: "";
+  margin: 10px auto;
+  display: block;
+  border: 2px solid rgb(119, 182, 119);
+  border-radius: 15px;
+}
+
+#vesti {
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.sekcija {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.naslov {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 40px 0;
+}
+
+.sekcija .vest {
+  text-align: left;
+  cursor: pointer;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.sekcija .vest .slika {
+  float: left;
+  margin-right: 20px;
+  width: 175px;
+  height: 105px;
+  overflow: hidden;
+}
+
+.sekcija .vest .slika img {
+  width: 100%;
+}
+
+.sekcija .vest .v {
+  width: 80%;
+}
+
+.v a {
+  text-decoration: none;
+  color: black;
+}
+
+.v a p {
+  color: rgb(59, 59, 59);
+}
+
+.sekcija .vest .v h3,
+p {
+  text-align: start;
+}
+
+#proizvodid {
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+
+#proizvodid h1::after {
+  width: 60%;
+  content: "";
+  margin: 10px auto;
+  display: flex;
+  line-height: 2px;
+  border: 2px solid rgb(119, 182, 119);
+  border-radius: 15px;
+}
+
+.proizvodi {
+  margin: 0 auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.pr {
+  position: relative;
+  padding: 20px;
+  display: inline-block;
+  border: 2px solid #35702673;
+  border-radius: 15px;
+  margin: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.pr:hover {
+  transform: scale(1.05);
+}
+
+.pr img {
+  width: 100%;
+}
+
+.pr p input {
+  width: 30%;
+  outline-style: none;
+  padding: 5px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+#proizvodid .sekcijap .proizvodi .pr .btn {
+  cursor: pointer;
+  width: 60%;
+  background-color: rgba(144, 238, 144, 0.363);
+  font-size: 15px;
+  padding: 10px;
+  outline-style: none;
+  border-radius: 20px;
+  border-color: rgb(68, 131, 71);
+  margin: 10px;
+}
+
+footer {
+  text-align: center;
+  height: 135px;
+  background-color: rgb(141, 218, 141);
+}
+
+footer p {
+  margin: 0 auto;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footerwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+@media screen and (max-width: 1660px) {
+  ul {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1660px) {
+  .proizvodi {
+    transition: 1s ease-in;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .proizvodi {
+    transition: 1s ease-in;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .proizvodi {
+    transition: 1s ease-in;
+    grid-template-columns: 1fr;
+  }
+}
+
+#registracija{
+  display: none;
+  margin: 0 auto;
+  padding: 30px 0px 30px 0px;
+}
+
+#registracija label{
+  text-align: center;
+}
+
+
+#registracija input{
+  text-align: center;
+  border-radius: 15px;
+  width: 200px;
+}
+
+#registracija input:hover{
+  background-color: rgba(155, 226, 108, 0.644);
+}
+
+#registracija input:focus{
+  outline: none;
+  transform: scale(1.05);
+}
+
+#registracija p, a{
+  text-align: center;
+}
+
+#login{
+  display: none;
+  margin: 0 auto;
+  padding: 30px 0px 30px 0px;
+}
+
+#login label{
+  text-align: center;
+}
+
+
+#login input{
+  text-align: center;
+  border-radius: 15px;
+  width: 200px;
+}
+
+#login input:hover{
+  background-color: rgba(155, 226, 108, 0.644);
+}
+
+#login input:focus{
+  outline: none;
+  transform: scale(1.05);
+}
+
+#login p, a{
+  text-align: center;
+}
+
+.glavni #registracija button{
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  color: rgb(0, 153, 255);
+}
+
+
+.glavni #login button{
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 16px;
+  color: rgb(0, 153, 255);
+}
+
+.glavni #registracija button:focus{
+  outline: none;
+}
+
+
+.glavni #login button:focus{
+  outline: none;
+}
+
+.glavni #registracija button:hover{
+  transform: scale(1.05);
+}
+
+
+.glavni #login button:hover{
+  transform: scale(1.05);
+}
